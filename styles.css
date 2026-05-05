@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Verdana;
+  background-color: #eee;
+}
+
+
+.hero {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.hero-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1.6rem;
+  padding: 0.4rem;
+  width: 20rem;
+  height: 36rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  border: 0.15rem solid #333;
+}
+
+.name{
+  padding: 0 5%;
+}
+
+.emoji {
+  font-size: 3.2rem;
+}
+
+.price {
+  padding: 0 3.2rem;
+}
+
+.energy {
+  padding: 0 2.4rem;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Mobil versjonen */
+@media (max-aspect-ratio: 1/1) {
+  .hero-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    width: 90%;
+    height: 32rem;
+  }
+}
